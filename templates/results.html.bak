@@ -42,25 +42,6 @@
                 {% endfor %}
             </tbody>
         </table>
-        <h2 class="text-center mt-5">Voting Log</h2>
-        <table class="table table-bordered">
-            <thead class="thead-light">
-                <tr>
-                    <th>Group</th>
-                    <th>Voted For</th>
-                    <th>Points</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for log in vote_logs %}
-                <tr>
-                    <td>{{ log[0] }}</td>
-                    <td>{{ log[1] }}</td>
-                    <td>{{ log[2] }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
         <form action="/reset" method="GET">
             <button type="submit" class="btn btn-danger">Reset Votes</button>
         </form>

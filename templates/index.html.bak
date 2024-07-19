@@ -9,7 +9,6 @@
 <body>
     <div class="container mt-5">
         <h2 class="text-center">Group Voting Form</h2>
-        <img src="{{ url_for('static', filename='images/poll_form_illustration_3_1.png') }}" class="img-fluid mx-auto d-block" alt="Cloud Computing for Big Data">
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 <div class="alert alert-warning">
@@ -58,5 +57,8 @@
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
